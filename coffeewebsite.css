@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #EAE7DE;
+}
+/* nav bar */
+.navbar h2{
+    position: fixed;
+    text-transform: uppercase;
+    top: -15px;
+    left: 10px;
+    color: white;
+    z-index: 4;
+} 
+.navbar i{
+    font-size: 30px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    color: white;
+    z-index: 4;
+}
+/* first page */
+.first-page{
+    position: relative;
+}
+.container{
+    position: absolute;
+    top:20%;
+    width: 500px;
+    right: 50%;
+    margin-right: -250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadeInUp;
+    animation-duration: 1.5s;
+}
+.first-page .coffee-bar-image{
+    width: 100%;
+    z-index: -2;
+    height: 100%;
+    filter: contrast(800%);
+    filter: hue-rotate(10deg);
+    filter: brightness(80%);
+    object-fit: cover;
+}
+.first-page .logo-img{
+    height: 150px;
+    width: 300px;
+}
+.text-for-home h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 0px;
+    color: white;
+}
+.text-for-home p{
+    width: 270px;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    margin-top: 15px;
+    color: white;
+}
+.text-for-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+}
+.bottom{
+    margin-top: 10px;
+}
+.first-page .bottom .btn1{
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: #EAE7DE;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    color: white;
+    border: 2px solid #EAE7DE;
+    transition: 0.5s;
+}
+.first-page .bottom .btn2{
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    color: #EAE7DE;
+    border: 2px solid #EAE7DE;
+    transition: 0.5s;
+}
+.first-page .bottom .btn1:hover{
+    background-color: transparent;
+}
+.first-page .bottom .btn2:hover{
+    background-color: #EAE7DE;
+    color: black;
+}
+/* second-page */
+.second-page{
+    position: relative;
+    height: 650px;
+    background-color: #EAE7DE;
+}
+.second-page-text{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-top: 10px;
+    position: absolute;
+    right: 15%;
+    animation: fadeInUp;
+    animation-duration: 1.5s;
+}
+.second-page-text .finest-ingredients{
+    font-size: 30px;
+}
+.machine-icons{
+    margin-right: 50px;
+    width: 80px;
+    height: 90px;
+}
+.machine-instruction{
+    display: flex;
+    align-items: center;
+
+}
+.machine-instruction .instruction span{
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.machine-instruction h2{
+    font-size: 20px;
+}
+.left-image{
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    animation: fadeInUp;
+    animation-duration: 1.5s;
+}
+.left-image-one, .left-image-two{
+    height: 400px;
+}
+.quality-product{
+    position: absolute;
+    right: 12px;
+    height: 100px;
+    width: 100px;
+}
+.left-image-one{
+    position: relative;
+    bottom: 20px;
+}
+.left-image-two{
+    position: relative;
+    right: 30px;
+}
+/* third page  */
+.third-page{
+    width: 100%;
+    height:650px;
+    position: relative;
+}
+.third-page-background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    filter: brightness(70%)
+}
+.try-your-coffee{
+    position: absolute;
+    width: 300px;
+    left: 20%;
+    top: 150px;
+}
+.third-page-rightside{
+    position: absolute;
+    width: 450px;
+    right: 15%;
+    top: 100px;
+    color: white;
+}
+.third-page-rightside h1{
+    font-size: 50px;
+}
+.third-page-rightside h1 p{
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+.third-page-rightside button{
+    font-size: 20px;
+    padding: 20px 30px;
+    border: none;
+    background-color: #C7A17A;
+    color: white;
+    letter-spacing: 5px;
+    font-family: 'Oswald', sans-serif;
+}
+.third-page-rightside button:hover{
+    border: 1px solid #C7A17A;
+    background-color: transparent;
+}
+.try-your-coffee, .third-page-rightside h1, .third-page-rightside h1 p,.third-page-rightside button{
+    animation: fadeInUp;
+    animation-duration: 1.5s;   
+}
+/* fourth page */
+.fourth-page{
+    width: 100%;
+    height: 650px;
+    background-color: #EAE7DE;
+    position: relative;
+}
+.fourth-page .fourth-page-text h1{
+    margin: 25px 0 0 0;
+}
+.fourth-page-text{
+    position: absolute;
+    left: 50%;
+    font-size: 20px;
+}
+.fourth-page-text button{
+    font-size: 20px;
+    padding: 20px 30px;
+    border: none;
+    background-color: #191816;
+    color: white;
+    letter-spacing: 5px;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 20px;
+}
+.fourth-page-text button:hover{
+    background-color: white;
+    color: black;
+    transition: .5s;
+}
+.fourth-page .fourth-page-text .coffee-menu li h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    margin: 0px;
+    color: #191816;
+}
+
+.fourth-page .fourth-page-text .coffee-menu li{
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    margin-top: 10px;
+    color: #c87b2f;
+    width: 290px
+}
+
+.fourth-page .fourth-page-text .coffee-menu li h2::after{
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: #242424;
+    width: 100%;
+    bottom: 17px;
+    right: 1px;
+}
+.menu-list{
+    display: flex;
+}
+.menu-list .prizes{
+    position: absolute;
+    left: 300px;
+}
+.menu-list .prizes li{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    height: 42px;
+    margin-top: 10px;
+    color: #191816;
+    list-style-type: none;
+}
+/* fourth-page-image */
+.fourth-page-img6{
+    height: 150px;
+    position: absolute;
+    left: 100px;
+    top: 210px;
+}
+.fourth-page-img5{
+    height: 350px;
+    top: 0px;
+    right: 0px;
+    position: absolute;
+}
+.fourth-page-img4{
+    height: 250px;
+    position: absolute;
+    right: 0px;
+    bottom: 50px;
+}
+.fourth-page-img3{
+    position: absolute;
+    height: 300px;
+    left: 10px;
+    bottom: 40px;
+    z-index: 3;
+}
+.fourth-page-img2{
+    position: absolute;
+    height: 400px;
+    left: 150px;
+    top: 150px;
+    z-index: 3;
+}
+.fourth-page-img1{
+    position: absolute;
+    height: 300px;
+    left: 100px;
+}
+/* animation fourth page */
+.fourth-page-text{
+    animation: fadeInUp;
+    animation-duration: 1.5s;
+}
+/* end page */
+/* end left text */
+.end-page{
+    width: 100%;
+    height: 650px;
+    position: relative;
+}
+.end-page-container{
+    /* width: 100%;
+    height: 650px; */
+    /* position: absolute; */
+    display: flex;
+    position: absolute;
+    top: 20%;
+    right:20%;
+}
+.end-left-text{
+    /* position: absolute; */
+    top: 150px;
+    margin-right: 20px;
+}
+.end-page img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(50%);
+}
+.end-left-text{
+    height: 400px;
+    width: 370px;
+    background-color: #191816;
+    border: 1px solid white;
+}
+.end-left-text .opening{
+    color: white;
+    font-size: 20px;
+    margin: 20px 0px 0px 40px;
+}
+.end-left-text .phone{
+    font-family: 'Montserrat', sans-serif;
+    color: #C7A17A;
+    margin-left: 40px;
+    font-size: 15px;
+    margin-top: 20px;
+}
+.end-left-text .left-list-container .days-list{
+    margin: 10px 0px;
+}
+.end-left-text .left-list-container .days-list li{
+    color: white;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    position: relative;
+}
+.end-left-text .left-list-container .days-list li::after{
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: white;
+    width: 80px;
+    bottom: 1px;
+}
+.left-list-container{
+    display: flex;
+}
+
+.end-left-text .left-list-container .times-list{
+    position: absolute;
+    left: 200px;
+    margin-top: 10px;
+}
+.end-left-text .left-list-container .times-list .times{
+    color: white;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    position: relative;
+}
+.end-left-text .left-list-container .times-list .times::before{
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: white;
+    bottom: 1px;
+    width: 100%;
+    right: 110%;
+}
+/* end right text */
+.end-right-text{
+    /* position: absolute; */
+    top: 150px;
+
+}
+.end-right-text-container h1, .end-right-text-container span, .end-right-text-container h2, .end-right-text-container .bx{
+    color: white;
+}
+.email-input{
+    display: flex;
+}
+.end-right-text-container .bxs-right-arrow{
+    background-color: #C7A17A;
+    font-size: 20px;
+    margin-left: 5px;
+    padding: 6px 6px;
+}
+.end-right-text-container span{
+    font-weight: 20px;
+}
+.end-right-text-container .contact-us{
+    margin-bottom: 45px;
+}
+.end-right-text-container input{
+    height: 30px;
+    width: 250px;
+    border-radius: none;
+    border: 1px solid #C7A17A;
+    background-color: transparent;
+}
+.end-right-text-container .last-icons{
+    font-size: 30px;
+    margin-right: 40px;
+}
+.end-right-text-container .bxs-right-arrow:hover{
+    background-color: white;
+    color:#C7A17A;
+    transition: .5s;
+}
+.end-right-text, .end-left-text{
+    animation: fadeInUp;
+    animation-duration: 1.5s;
+}
+/* responsive */
+@media(max-width: 1100px) {
+    .second-page .left-image{
+        z-index: 1;
+        opacity: 85%;
+    }
+    .second-page .second-page-text{
+        z-index: 2;
+    }
+    .second-page .second-page-text .machine-icons{
+        background-color:#ffffff;
+        padding: 5px;
+        border-radius: 10px;
+        border: 2px solid #C7A17A;
+    }
+    .try-your-coffee{
+        left: 10%;
+    }
+    .third-page-rightside{
+        right: 10%;
+    }
+    .fourth-page-img4{
+        z-index: 1;
+    }
+    .fourth-page-text{
+        z-index: 2;
+    }
+}
+@media(max-width: 900px){
+    .first-page .container{
+        top: 10%;
+        width: 200px;
+        margin-right: -100px;
+    }
+    .first-page .container img{
+        width: 100%;
+        height: 100px;
+    }
+    .first-page .bottom .btn1{
+        font-size: 10px;
+        padding: 10px 15px;
+        letter-spacing: 3px;
+        color: white;
+    }
+    .first-page .bottom .btn2{
+        display: none;
+    }
+    .second-page .left-image{
+        z-index: 1;
+        opacity: 50%;
+    }
+    .third-page .try-your-coffee{
+        width: 200px;
+        top: 40%;
+        left: 20%;
+    }
+    .third-page .third-page-rightside{
+        width: 300px;
+        top: 30%;
+        right: 10%;
+    }
+    .third-page-rightside button{
+        font-size: 10px;
+        padding: 10px 20px;
+        letter-spacing: 3px;
+    }
+    .third-page .third-page-rightside h1{
+        font-size: 25px;
+    }
+    .fourth-page .fourth-page-text{
+        left: 30%;
+        top: 10%;
+        z-index: 4;
+    }
+    .fourth-page .fourth-page-img{
+        opacity: 60%;;
+    }
+    .end-page .end-page-container{
+        right: 10%;
+    }
+}
+@media(max-width: 715px){
+    .third-page .try-your-coffee{
+        width: 150px;
+        top: 40%;
+        left: 20%;
+    }
+    .end-page-container .end-left-text{
+        display: none;
+    }
+    .end-page-container .end-right-text .end-right-text-container{
+        left: 10%;
+    }
+}
+@media(max-width: 651px){
+    .first-page .container img{
+        width: 90px;
+        height: 50px;
+    }
+}
+@media(max-width: 575px){
+    .first-page, .second-page, .third-page, .fourth-page, .end-page{
+        min-width: 600px;
+    }
+    .third-page .try-your-coffee{
+        width: 150px;
+        top: 40%;
+        left: 10%;
+    }
+    .fourth-page .fourth-page-text{
+        left: 15%;
+        top: 10%;
+        z-index: 4;
+    }
+}
